@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Пульс дома: 3D-референс (дом в форме Г)</title>
+<!-- Референс интерфейса, не часть этапа 1. Данные статусов фиктивные. three.js r128 грузится с cdnjs. -->
+<style>
+:root{
+  --text-primary:#1f1f1e; --text-secondary:#5f5e5a; --text-success:#27500a; --bg-accent:#e6f1fb; --text-accent:#0c447c;
+  --surface-2:#f7f6f2; --border:#d3d1c7;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --text-primary:#f1efe8; --text-secondary:#b4b2a9; --text-success:#c0dd97; --bg-accent:#0c447c; --text-accent:#e6f1fb; --surface-2:#2c2c2a; --border:#444441; }
+}
+body{ margin:0; padding:12px; font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; color:var(--text-primary); background:#fff; }
+@media (prefers-color-scheme: dark){ body{ background:#1a1a19; } }
+button{ font:inherit; color:var(--text-primary); background:transparent; border:1px solid var(--border); border-radius:8px; padding:6px 12px; cursor:pointer; }
+input[type=text]{ font:inherit; padding:6px 8px; border:1px solid var(--border); border-radius:8px; background:transparent; color:var(--text-primary); }
+.sr-only{ position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); }
+</style>
+</head>
+<body>
+<h2 class="sr-only">Трёхмерная модель дома в форме буквы Г: окна окрашены по статусу квартир, время суток и погода, вращение перетаскиванием</h2>
+<div style="display:flex;flex-direction:column;gap:12px;max-width:520px;margin:0 auto;">
+<div id="host" style="width:100%;height:330px;border-radius:12px;overflow:hidden;touch-action:none;cursor:grab;"></div>
+<div style="display:flex;align-items:center;gap:12px;">
+<span style="font-size:14px;color:var(--text-secondary);">Время</span>
+<input id="t" type="range" min="0" max="24" step="0.25" value="9" style="flex:1;"/>
+<span id="tout" style="font-size:14px;min-width:48px;text-align:right;">09:00</span>
+</div>
+<div style="display:flex;gap:8px;flex-wrap:wrap;">
+<button type="button" id="now">Местное время</button>
+<button type="button" id="reset">Сбросить вид</button>
+<button type="button" id="alive" aria-pressed="true">Жизнь во дворе</button>
+</div>
+<div style="display:flex;gap:8px;flex-wrap:wrap;">
+<button type="button" data-w="rain">Дождь</button>
+<button type="button" data-w="fog">Туман</button>
+<button type="button" data-w="snow">Снег</button>
+<button type="button" data-w="off">Без погоды</button>
+</div>
+<div style="display:flex;gap:8px;">
+<button type="button" data-role="obs">Наблюдатель</button>
+<button type="button" data-role="owner">Житель</button>
+</div>
+<div id="card" style="background:var(--surface-2);border:0.5px solid var(--border);border-radius:12px;padding:0.75rem 1rem;"></div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+const $ = id => document.getElementById(id);
+const host = $('host');
+const W = host.clientWidth || 360, H = 330;
+const renderer = new THREE.WebGLRenderer({antialias: true, alpha: true});
+renderer.setPixelRatio(Math.min(2, window.devicePixelRatio || 1));
+renderer.setSize(W, H);
+host.appendChild(renderer.domElement);
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0xB5D4F4);
+scene.fog = new THREE.Fog(0xB5D4F4, 70, 180);
+const camera = new THREE.PerspectiveCamera(40, W/H, 0.1, 300);
+camera.position.set(0, 14, 48);
+camera.lookAt(0, 5, -6);
+const world = new THREE.Group();
+world.position.x = -12;
+scene.add(world);
+const hemi = new THREE.HemisphereLight(0xffffff, 0x888780, 0.7);
+scene.add(hemi);
+const sun = new THREE.DirectionalLight(0xffffff, 1);
+scene.add(sun);
+
+const KEY = [[0,'#0C2340'],[5,'#1B3A5C'],[7,'#F7C18B'],[9,'#B5D4F4'],[17,'#B5D4F4'],[19,'#F5A96B'],[21,'#1B3A5C'],[24,'#0C2340']];
+const hx = h => [1,3,5].map(i => parseInt(h.substr(i,2),16));
+const rh = a => '#' + a.map(v => Math.round(v).toString(16).padStart(2,'0')).join('');
+function skyAt(h){
+  for (let i = 0; i < KEY.length-1; i++){
+    const [a, ca] = KEY[i], [b, cb] = KEY[i+1];
+    if (h >= a && h <= b){
+      const t = (h-a)/(b-a || 1), A = hx(ca), B = hx(cb);
+      return rh(A.map((v, j) => v + (B[j]-v)*t));
+    }
+  }
+  return '#0C2340';
+}
+function nowHour(){ const d = new Date(); return d.getHours() + d.getMinutes()/60; }
+let hour = nowHour(), manual = false, weather = 'rain', alive = true;
+
+const wallMat = new THREE.MeshStandardMaterial({color: 0xB4B2A9, roughness: 0.9});
+const roofMat = new THREE.MeshStandardMaterial({color: 0x888780});
+const doorMat = new THREE.MeshStandardMaterial({color: 0x5F5E5A});
+const grassMat = new THREE.MeshStandardMaterial({color: 0xC0DD97, roughness: 1});
+const paveMat = new THREE.MeshStandardMaterial({color: 0xD3D1C7});
+const roadMat = new THREE.MeshStandardMaterial({color: 0x5F5E5A});
+const stripeMats = [0xD85A30, 0xED93B1, 0x85B7EB].map(c => new THREE.MeshStandardMaterial({color: c}));
+const STAT = {ok: 0x97C459, warn: 0xEF9F27, alarm: 0xE24B4A, off: 0x888780};
+const smat = {};
+for (const k in STAT) smat[k] = new THREE.MeshStandardMaterial({color: STAT[k], emissive: STAT[k], emissiveIntensity: 0.1});
+
+function box(w, h, d, mat, x, y, z){
+  const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), mat);
+  m.position.set(x, y, z);
+  world.add(m);
+  return m;
+}
+// Фиктивные статусы для демонстрации
+function statusOf(apt){
+  if (apt === 210) return 'off';
+  if (apt === 45) return 'warn';
+  const k = (apt*37) % 100;
+  if (k < 68) return 'ok';
+  if (k < 88) return 'warn';
+  if (k < 93) return 'alarm';
+  return 'ok';
+}
+const LABEL = {ok: 'В порядке', warn: 'Замечание', alarm: 'Авария', off: 'Неактивна'};
+function descOf(apt){
+  return ['протекает кран под мойкой','не работает домофон','сквозит из окна','перегорела лампочка в подъезде','шумит вентиляция'][apt % 5];
+}
+
+const SEC = [{x0:0, n:8, base:0, rot:0}, {x0:8, n:7, base:80, rot:0}, {x0:15, n:6, base:150, rot:90}];
+const FH = 1.1, FL = 10, DEP = 9, BH = FL*FH;
+const ZB = -9, ZF = -4.5, ZBACK = -13.5;
+const XIN = 15, XOUT = 24, CX3 = 19.5, CZ3 = -1.5;
+const wins = [];
+const wg = new THREE.BoxGeometry(0.6, 0.7, 0.06);
+function win(x, y, z, apt, rotY){
+  const m = new THREE.Mesh(wg, smat[statusOf(apt)]);
+  m.position.set(x, y, z);
+  if (rotY) m.rotation.y = rotY;
+  m.userData = {apt};
+  world.add(m);
+  wins.push(m);
+}
+SEC.forEach(S => {
+  const w = S.n;
+  if (S.rot === 0){
+    const cx = S.x0 + w/2;
+    box(w, BH, DEP, wallMat, cx, BH/2, ZB);
+    box(w + 0.3, 0.3, DEP + 0.3, roofMat, cx, BH + 0.15, ZB);
+    box(1.1, 1.2, 0.1, doorMat, cx, 0.6, ZF + 0.05);
+    for (let k = 0; k < w; k += 3){
+      box(0.16, BH, 0.05, stripeMats[(k/3|0) % 3], S.x0 + k + 0.1, BH/2, ZF + 0.03);
+    }
+    for (let f = 0; f < FL; f++){
+      for (let i = 0; i < w; i++){
+        const apt = S.base + f*w + i + 1;
+        const xc = S.x0 + i + 0.5;
+        if (!(f === 0 && Math.abs(xc - cx) < 0.9)) win(xc, f*FH + 0.6, ZF + 0.04, apt, 0);
+        if (i % 2 === 0) win(xc, f*FH + 0.6, ZBACK - 0.04, apt, 0);
+      }
+    }
+  } else {
+    box(DEP, BH, w, wallMat, CX3, BH/2, CZ3);
+    box(DEP + 0.3, 0.3, w + 0.3, roofMat, CX3, BH + 0.15, CZ3);
+    box(0.1, 1.2, 1.1, doorMat, XIN + 0.05, 0.6, CZ3);
+    for (let f = 0; f < FL; f++){
+      for (let i = 0; i < w; i++){
+        const apt = S.base + f*w + i + 1;
+        const zc = ZF + i + 0.5;
+        if (!(f === 0 && Math.abs(zc - CZ3) < 0.9)) win(XIN - 0.04, f*FH + 0.6, zc, apt, Math.PI/2);
+        win(XOUT + 0.04, f*FH + 0.6, zc, apt, Math.PI/2);
+      }
+    }
+  }
+});
+// Глухой угловой блок между секциями 2 и 3 (допущение, подтвердить по реальному плану)
+box(DEP, BH, DEP, wallMat, CX3, BH/2, ZB);
+box(DEP + 0.3, 0.3, DEP + 0.3, roofMat, CX3, BH + 0.15, ZB);
+
+box(60, 0.1, 44, grassMat, 12, -0.05, -6);
+box(60, 0.12, 2.6, paveMat, 12, 0.06, 3.5);
+box(60, 0.1, 4.5, roadMat, 12, 0.05, 8.5);
+box(2.4, 0.6, 1.4, new THREE.MeshStandardMaterial({color: 0xD85A30}), -3, 0.3, -4);
+[[-4,-12],[28,-12],[30,-2]].forEach(([x,z]) => {
+  box(0.3, 1.6, 0.3, doorMat, x, 0.8, z);
+  const crown = new THREE.Mesh(new THREE.SphereGeometry(1.4, 12, 10), new THREE.MeshStandardMaterial({color: 0x639922}));
+  crown.position.set(x, 2.6, z);
+  world.add(crown);
+});
+
+// «Живой двор»: стилизованные случайные силуэты, не связаны с реальными жильцами
+const WALK_COL = [0x378ADD, 0xD85A30, 0x1D9E75, 0x534AB7, 0xD4537E];
+const walkers = [];
+function makeWalker(){
+  const g = new THREE.Group();
+  const body = new THREE.Mesh(new THREE.CylinderGeometry(0.14, 0.14, 0.7, 8), new THREE.MeshStandardMaterial({color: WALK_COL[Math.floor(Math.random()*WALK_COL.length)]}));
+  body.position.y = 0.45;
+  const head = new THREE.Mesh(new THREE.SphereGeometry(0.14, 10, 8), new THREE.MeshStandardMaterial({color: 0xF5C4B3}));
+  head.position.y = 0.9;
+  g.add(body, head);
+  world.add(g);
+  return g;
+}
+function resetWalker(w, init){
+  w.dir = Math.random() < 0.5 ? -1 : 1;
+  w.sp = 0.8 + Math.random()*0.8;
+  w.g.position.set(init ? Math.random()*22 : (w.dir === 1 ? -2 : 26), 0, 2.6 + Math.random()*1.6);
+}
+for (let k = 0; k < 6; k++){
+  const w = {g: makeWalker()};
+  resetWalker(w, true);
+  walkers.push(w);
+}
+const cars = [];
+const CAR_COL = [0xD3D1C7, 0xB4B2A9, 0x85B7EB, 0xF5C4B3];
+function spawnCar(){
+  const dir = Math.random() < 0.5 ? 1 : -1;
+  const m = new THREE.Mesh(new THREE.BoxGeometry(1.8, 0.7, 0.9), new THREE.MeshStandardMaterial({color: CAR_COL[Math.floor(Math.random()*CAR_COL.length)]}));
+  m.position.set(dir === 1 ? -8 : 32, 0.4, 8.5);
+  world.add(m);
+  cars.push({m, dir, sp: 4});
+}
+let carT = 25;
+
+const RN = 260, rd = [], rp = new Float32Array(RN*6);
+for (let i = 0; i < RN; i++){
+  rd.push({x: Math.random()*44 - 22, y: Math.random()*22, z: Math.random()*44 - 18, s: 14 + Math.random()*6});
+}
+const rainGeo = new THREE.BufferGeometry();
+rainGeo.setAttribute('position', new THREE.BufferAttribute(rp, 3));
+const rain = new THREE.LineSegments(rainGeo, new THREE.LineBasicMaterial({color: 0x85B7EB, transparent: true, opacity: 0.7}));
+rain.visible = false;
+scene.add(rain);
+const sp2 = new Float32Array(120*3);
+for (let i = 0; i < 120; i++){ sp2[i*3] = Math.random()*44-22; sp2[i*3+1] = Math.random()*22; sp2[i*3+2] = Math.random()*44-18; }
+const snowGeo = new THREE.BufferGeometry();
+snowGeo.setAttribute('position', new THREE.BufferAttribute(sp2, 3));
+const snow = new THREE.Points(snowGeo, new THREE.PointsMaterial({color: 0xffffff, size: 0.18}));
+snow.visible = false;
+scene.add(snow);
+
+function applyLight(){
+  const th = (hour - 6)/12 * Math.PI;
+  const day = Math.max(0, Math.min(1, Math.sin(th)*1.6));
+  sun.position.set(-Math.cos(th)*30, Math.max(-5, Math.sin(th)*25), 22);
+  sun.intensity = day * 1.1;
+  hemi.intensity = (0.25 + 0.5*day) - (weather === 'rain' ? 0.1 : 0);
+  const dark = 1 - day;
+  for (const k in smat) smat[k].emissiveIntensity = 0.08 + dark*0.9;
+  const c = skyAt(hour);
+  scene.background.set(c);
+  scene.fog.color.set(c);
+}
+function fmt(h){
+  const hh = Math.floor(h), mm = Math.min(59, Math.round((h - hh)*60));
+  return String(hh).padStart(2,'0') + ':' + String(mm).padStart(2,'0');
+}
+
+let last = performance.now();
+function frame(now){
+  const dt = Math.min(0.05, (now - last)/1000);
+  last = now;
+  if (!manual) hour = nowHour();
+  applyLight();
+  $('t').value = hour;
+  $('tout').textContent = fmt(hour);
+  rain.visible = weather === 'rain';
+  snow.visible = weather === 'snow';
+  scene.fog.near = weather === 'fog' ? 38 : 70;
+  scene.fog.far = weather === 'fog' ? 110 : 180;
+  if (weather === 'rain'){
+    rd.forEach((d, i) => {
+      d.y -= d.s*dt;
+      if (d.y < 0) d.y = 22;
+      rp[i*6] = d.x; rp[i*6+1] = d.y; rp[i*6+2] = d.z;
+      rp[i*6+3] = d.x - 0.12; rp[i*6+4] = d.y + 0.6; rp[i*6+5] = d.z;
+    });
+    rainGeo.attributes.position.needsUpdate = true;
+  }
+  if (weather === 'snow'){
+    for (let i = 0; i < 120; i++){
+      sp2[i*3+1] -= 1.6*dt;
+      if (sp2[i*3+1] < 0) sp2[i*3+1] = 22;
+    }
+    snowGeo.attributes.position.needsUpdate = true;
+  }
+  if (alive){
+    walkers.forEach(w => {
+      w.g.position.x += w.dir*w.sp*dt;
+      if (w.g.position.x < -3 || w.g.position.x > 27) resetWalker(w, false);
+    });
+    carT -= dt;
+    if (carT <= 0){ spawnCar(); carT = 25 + Math.random()*35; }
+    cars.forEach(c => c.m.position.x += c.dir*c.sp*dt);
+    for (let i = cars.length-1; i >= 0; i--){
+      const c = cars[i];
+      if (c.m.position.x < -10 || c.m.position.x > 34){ world.remove(c.m); cars.splice(i, 1); }
+    }
+  }
+  walkers.forEach(w => w.g.visible = alive);
+  renderer.render(scene, camera);
+  requestAnimationFrame(frame);
+}
+
+let down = false, lx = 0, moved = 0;
+const el = renderer.domElement;
+const ray = new THREE.Raycaster();
+const vec = new THREE.Vector2();
+el.addEventListener('pointerdown', e => { down = true; lx = e.clientX; moved = 0; el.setPointerCapture(e.pointerId); });
+el.addEventListener('pointermove', e => {
+  if (!down) return;
+  const dx = e.clientX - lx;
+  lx = e.clientX;
+  moved += Math.abs(dx);
+  world.rotation.y += dx*0.01;
+});
+el.addEventListener('pointerup', e => {
+  down = false;
+  if (moved < 6){
+    const r = el.getBoundingClientRect();
+    vec.set(((e.clientX - r.left)/r.width)*2 - 1, -((e.clientY - r.top)/r.height)*2 + 1);
+    ray.setFromCamera(vec, camera);
+    const hit = ray.intersectObjects(wins, false);
+    if (hit.length) select(hit[0].object.userData.apt);
+  }
+});
+
+let sel = 45, role = 'obs', expanded = false;
+const comments = {};
+const card = $('card');
+function setPressed(btn, on){
+  btn.setAttribute('aria-pressed', on);
+  btn.style.background = on ? 'var(--bg-accent)' : 'transparent';
+  btn.style.color = on ? 'var(--text-accent)' : 'var(--text-primary)';
+}
+function esc(s){ return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+function renderCard(){
+  const apt = sel, st = statusOf(apt), desc = descOf(apt);
+  if (role === 'owner'){
+    if (apt !== 45){
+      card.innerHTML = '<p style="margin:0;font-size:14px;">Это не ваша квартира. Её заявки видны наблюдателю.</p>';
+      return;
+    }
+    card.innerHTML = `<div style="display:flex;flex-direction:column;gap:8px;">
+      <p style="margin:0;font-size:15px;font-weight:500;">Ваша квартира КВ-45 · ${LABEL[st]}</p>
+      <p style="margin:0;font-size:14px;">${desc}</p>
+      <p style="margin:0;font-size:13px;color:var(--text-secondary);">Заявка от 15 октября · ждёт вашего подтверждения</p>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <button type="button" data-act="close">Подтвердить, что сделано</button>
+        <button type="button" data-act="edit">Изменить описание</button>
+      </div>
+      <p data-msg style="margin:0;font-size:13px;color:var(--text-success);min-height:18px;"></p>
+    </div>`;
+    return;
+  }
+  const list = (comments[apt] || []).map(c => `<p style="margin:4px 0 0;font-size:13px;">${esc(c)}</p>`).join('');
+  card.innerHTML = `<div style="display:flex;flex-direction:column;gap:6px;">
+    <button type="button" data-act="toggle" style="text-align:left;">
+      <span style="font-size:14px;font-weight:500;">КВ-${apt}</span>
+      <span style="font-size:12px;color:var(--text-secondary);margin-left:8px;">${st === 'ok' ? 'в порядке' : desc}</span>
+    </button>
+    ${expanded ? `<div style="display:flex;flex-direction:column;gap:6px;">
+      <p style="margin:0;font-size:13px;color:var(--text-secondary);">Заявка от 15 октября · ${LABEL[st]} · ждёт подтверждения</p>
+      ${list}
+      <div style="display:flex;gap:8px;margin-top:4px;">
+        <input id="cin" type="text" placeholder="Комментарий" style="flex:1;"/>
+        <button type="button" data-act="send">Отправить</button>
+      </div>
+    </div>` : ''}
+  </div>`;
+}
+function select(apt){ sel = apt; expanded = false; renderCard(); }
+card.addEventListener('click', e => {
+  const t = e.target.closest('[data-act]');
+  if (!t) return;
+  const a = t.getAttribute('data-act');
+  if (a === 'toggle'){ expanded = !expanded; renderCard(); }
+  else if (a === 'send'){
+    const v = ($('cin') ? $('cin').value : '').trim();
+    if (v){ (comments[sel] = comments[sel] || []).push(v); renderCard(); }
+  }
+  else if (a === 'close'){ card.querySelector('[data-msg]').textContent = 'Подтверждено. Окно станет зелёным, когда все заявки квартиры закрыты.'; }
+  else if (a === 'edit'){ card.querySelector('[data-msg]').textContent = 'Описание можно поправить, пока заявка не закрыта.'; }
+});
+document.querySelectorAll('[data-role]').forEach(b => b.addEventListener('click', () => {
+  role = b.getAttribute('data-role');
+  expanded = false;
+  document.querySelectorAll('[data-role]').forEach(x => setPressed(x, x === b));
+  renderCard();
+}));
+document.querySelectorAll('[data-w]').forEach(b => b.addEventListener('click', () => {
+  weather = b.getAttribute('data-w');
+  document.querySelectorAll('[data-w]').forEach(x => setPressed(x, x === b));
+}));
+$('t').addEventListener('input', e => { manual = true; hour = parseFloat(e.target.value); });
+$('now').addEventListener('click', () => { manual = false; });
+$('reset').addEventListener('click', () => { world.rotation.y = 0; });
+$('alive').addEventListener('click', () => { alive = !alive; setPressed($('alive'), alive); });
+setPressed($('alive'), true);
+document.querySelectorAll('[data-w]').forEach(x => setPressed(x, x.getAttribute('data-w') === 'rain'));
+document.querySelectorAll('[data-role]').forEach(x => setPressed(x, x.getAttribute('data-role') === 'obs'));
+renderCard();
+applyLight();
+requestAnimationFrame(frame);
+</script>
+</body>
+</html>

@@ -1,0 +1,3248 @@
+{
+  "klassifikator": {
+    "indeks": "000000",
+    "nasp": "xx",
+    "ulica": "bulvar-khudozhnikov",
+    "dom": "12",
+    "format_kod": "indeks-nasp-ulica-dom-sekciya-etazh-kvartira-okno"
+  },
+  "funkcii": {
+    "nablyudateli_vklyucheny": false,
+    "obshchiy_chat_doma": true,
+    "primechanie": "Наблюдатели из соседних домов отключены, но модель данных их уже поддерживает"
+  },
+  "dom": {
+    "kod": "000000-xx-bulvar-khudozhnikov-12",
+    "etazhi": 10,
+    "kvartir_po_dannym": 209,
+    "kvartir_v_modeli": 210,
+    "primechanie": "Черновик. Расхождение с 209 уточнить по планировке."
+  },
+  "sekcii": [
+    {
+      "kod": "000000-xx-bulvar-khudozhnikov-12-s1",
+      "nomer": 1,
+      "kvartir_na_etazh": 8,
+      "obshchie_zony": [
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s1-vhod",
+          "tip": "vkhodnaya_gruppa"
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s1-tambur",
+          "tip": "tambur"
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s1-lift",
+          "tip": "lift"
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s1-lestnica",
+          "tip": "lestnica"
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s1-okna-podezda",
+          "tip": "okna_v_podezde"
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s1-dveri-podezda",
+          "tip": "dveri_v_podezde"
+        }
+      ],
+      "etazhi": [
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e1",
+          "etazh": 1,
+          "koridor": {
+            "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e1-koridor",
+            "tip": "koridor"
+          },
+          "kvartiry": [
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e1-k1",
+              "nomer": 1,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e1-k1-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e1-k2",
+              "nomer": 2,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e1-k2-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e1-k3",
+              "nomer": 3,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e1-k3-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e1-k4",
+              "nomer": 4,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e1-k4-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e1-k5",
+              "nomer": 5,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e1-k5-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e1-k6",
+              "nomer": 6,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e1-k6-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e1-k7",
+              "nomer": 7,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e1-k7-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e1-k8",
+              "nomer": 8,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e1-k8-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e2",
+          "etazh": 2,
+          "koridor": {
+            "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e2-koridor",
+            "tip": "koridor"
+          },
+          "kvartiry": [
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e2-k9",
+              "nomer": 9,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e2-k9-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e2-k10",
+              "nomer": 10,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e2-k10-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e2-k11",
+              "nomer": 11,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e2-k11-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e2-k12",
+              "nomer": 12,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e2-k12-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e2-k13",
+              "nomer": 13,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e2-k13-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e2-k14",
+              "nomer": 14,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e2-k14-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e2-k15",
+              "nomer": 15,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e2-k15-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e2-k16",
+              "nomer": 16,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e2-k16-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e3",
+          "etazh": 3,
+          "koridor": {
+            "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e3-koridor",
+            "tip": "koridor"
+          },
+          "kvartiry": [
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e3-k17",
+              "nomer": 17,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e3-k17-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e3-k18",
+              "nomer": 18,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e3-k18-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e3-k19",
+              "nomer": 19,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e3-k19-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e3-k20",
+              "nomer": 20,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e3-k20-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e3-k21",
+              "nomer": 21,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e3-k21-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e3-k22",
+              "nomer": 22,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e3-k22-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e3-k23",
+              "nomer": 23,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e3-k23-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e3-k24",
+              "nomer": 24,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e3-k24-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e4",
+          "etazh": 4,
+          "koridor": {
+            "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e4-koridor",
+            "tip": "koridor"
+          },
+          "kvartiry": [
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e4-k25",
+              "nomer": 25,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e4-k25-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e4-k26",
+              "nomer": 26,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e4-k26-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e4-k27",
+              "nomer": 27,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e4-k27-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e4-k28",
+              "nomer": 28,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e4-k28-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e4-k29",
+              "nomer": 29,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e4-k29-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e4-k30",
+              "nomer": 30,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e4-k30-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e4-k31",
+              "nomer": 31,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e4-k31-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e4-k32",
+              "nomer": 32,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e4-k32-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e5",
+          "etazh": 5,
+          "koridor": {
+            "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e5-koridor",
+            "tip": "koridor"
+          },
+          "kvartiry": [
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e5-k33",
+              "nomer": 33,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e5-k33-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e5-k34",
+              "nomer": 34,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e5-k34-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e5-k35",
+              "nomer": 35,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e5-k35-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e5-k36",
+              "nomer": 36,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e5-k36-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e5-k37",
+              "nomer": 37,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e5-k37-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e5-k38",
+              "nomer": 38,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e5-k38-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e5-k39",
+              "nomer": 39,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e5-k39-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e5-k40",
+              "nomer": 40,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e5-k40-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e6",
+          "etazh": 6,
+          "koridor": {
+            "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e6-koridor",
+            "tip": "koridor"
+          },
+          "kvartiry": [
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e6-k41",
+              "nomer": 41,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e6-k41-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e6-k42",
+              "nomer": 42,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e6-k42-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e6-k43",
+              "nomer": 43,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e6-k43-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e6-k44",
+              "nomer": 44,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e6-k44-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e6-k45",
+              "nomer": 45,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e6-k45-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e6-k46",
+              "nomer": 46,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e6-k46-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e6-k47",
+              "nomer": 47,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e6-k47-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e6-k48",
+              "nomer": 48,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e6-k48-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e7",
+          "etazh": 7,
+          "koridor": {
+            "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e7-koridor",
+            "tip": "koridor"
+          },
+          "kvartiry": [
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e7-k49",
+              "nomer": 49,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e7-k49-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e7-k50",
+              "nomer": 50,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e7-k50-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e7-k51",
+              "nomer": 51,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e7-k51-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e7-k52",
+              "nomer": 52,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e7-k52-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e7-k53",
+              "nomer": 53,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e7-k53-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e7-k54",
+              "nomer": 54,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e7-k54-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e7-k55",
+              "nomer": 55,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e7-k55-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e7-k56",
+              "nomer": 56,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e7-k56-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e8",
+          "etazh": 8,
+          "koridor": {
+            "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e8-koridor",
+            "tip": "koridor"
+          },
+          "kvartiry": [
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e8-k57",
+              "nomer": 57,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e8-k57-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e8-k58",
+              "nomer": 58,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e8-k58-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e8-k59",
+              "nomer": 59,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e8-k59-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e8-k60",
+              "nomer": 60,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e8-k60-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e8-k61",
+              "nomer": 61,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e8-k61-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e8-k62",
+              "nomer": 62,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e8-k62-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e8-k63",
+              "nomer": 63,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e8-k63-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e8-k64",
+              "nomer": 64,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e8-k64-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e9",
+          "etazh": 9,
+          "koridor": {
+            "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e9-koridor",
+            "tip": "koridor"
+          },
+          "kvartiry": [
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e9-k65",
+              "nomer": 65,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e9-k65-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e9-k66",
+              "nomer": 66,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e9-k66-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e9-k67",
+              "nomer": 67,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e9-k67-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e9-k68",
+              "nomer": 68,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e9-k68-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e9-k69",
+              "nomer": 69,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e9-k69-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e9-k70",
+              "nomer": 70,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e9-k70-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e9-k71",
+              "nomer": 71,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e9-k71-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e9-k72",
+              "nomer": 72,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e9-k72-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e10",
+          "etazh": 10,
+          "koridor": {
+            "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e10-koridor",
+            "tip": "koridor"
+          },
+          "kvartiry": [
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e10-k73",
+              "nomer": 73,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e10-k73-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e10-k74",
+              "nomer": 74,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e10-k74-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e10-k75",
+              "nomer": 75,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e10-k75-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e10-k76",
+              "nomer": 76,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e10-k76-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e10-k77",
+              "nomer": 77,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e10-k77-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e10-k78",
+              "nomer": 78,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e10-k78-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e10-k79",
+              "nomer": 79,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e10-k79-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e10-k80",
+              "nomer": 80,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s1-e10-k80-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kod": "000000-xx-bulvar-khudozhnikov-12-s2",
+      "nomer": 2,
+      "kvartir_na_etazh": 7,
+      "obshchie_zony": [
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s2-vhod",
+          "tip": "vkhodnaya_gruppa"
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s2-tambur",
+          "tip": "tambur"
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s2-lift",
+          "tip": "lift"
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s2-lestnica",
+          "tip": "lestnica"
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s2-okna-podezda",
+          "tip": "okna_v_podezde"
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s2-dveri-podezda",
+          "tip": "dveri_v_podezde"
+        }
+      ],
+      "etazhi": [
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e1",
+          "etazh": 1,
+          "koridor": {
+            "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e1-koridor",
+            "tip": "koridor"
+          },
+          "kvartiry": [
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e1-k81",
+              "nomer": 81,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e1-k81-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e1-k82",
+              "nomer": 82,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e1-k82-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e1-k83",
+              "nomer": 83,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e1-k83-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e1-k84",
+              "nomer": 84,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e1-k84-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e1-k85",
+              "nomer": 85,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e1-k85-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e1-k86",
+              "nomer": 86,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e1-k86-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e1-k87",
+              "nomer": 87,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e1-k87-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e2",
+          "etazh": 2,
+          "koridor": {
+            "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e2-koridor",
+            "tip": "koridor"
+          },
+          "kvartiry": [
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e2-k88",
+              "nomer": 88,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e2-k88-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e2-k89",
+              "nomer": 89,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e2-k89-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e2-k90",
+              "nomer": 90,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e2-k90-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e2-k91",
+              "nomer": 91,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e2-k91-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e2-k92",
+              "nomer": 92,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e2-k92-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e2-k93",
+              "nomer": 93,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e2-k93-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e2-k94",
+              "nomer": 94,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e2-k94-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e3",
+          "etazh": 3,
+          "koridor": {
+            "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e3-koridor",
+            "tip": "koridor"
+          },
+          "kvartiry": [
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e3-k95",
+              "nomer": 95,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e3-k95-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e3-k96",
+              "nomer": 96,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e3-k96-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e3-k97",
+              "nomer": 97,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e3-k97-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e3-k98",
+              "nomer": 98,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e3-k98-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e3-k99",
+              "nomer": 99,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e3-k99-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e3-k100",
+              "nomer": 100,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e3-k100-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e3-k101",
+              "nomer": 101,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e3-k101-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e4",
+          "etazh": 4,
+          "koridor": {
+            "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e4-koridor",
+            "tip": "koridor"
+          },
+          "kvartiry": [
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e4-k102",
+              "nomer": 102,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e4-k102-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e4-k103",
+              "nomer": 103,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e4-k103-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e4-k104",
+              "nomer": 104,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e4-k104-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e4-k105",
+              "nomer": 105,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e4-k105-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e4-k106",
+              "nomer": 106,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e4-k106-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e4-k107",
+              "nomer": 107,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e4-k107-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e4-k108",
+              "nomer": 108,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e4-k108-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e5",
+          "etazh": 5,
+          "koridor": {
+            "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e5-koridor",
+            "tip": "koridor"
+          },
+          "kvartiry": [
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e5-k109",
+              "nomer": 109,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e5-k109-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e5-k110",
+              "nomer": 110,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e5-k110-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e5-k111",
+              "nomer": 111,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e5-k111-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e5-k112",
+              "nomer": 112,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e5-k112-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e5-k113",
+              "nomer": 113,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e5-k113-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e5-k114",
+              "nomer": 114,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e5-k114-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e5-k115",
+              "nomer": 115,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e5-k115-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e6",
+          "etazh": 6,
+          "koridor": {
+            "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e6-koridor",
+            "tip": "koridor"
+          },
+          "kvartiry": [
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e6-k116",
+              "nomer": 116,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e6-k116-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e6-k117",
+              "nomer": 117,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e6-k117-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e6-k118",
+              "nomer": 118,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e6-k118-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e6-k119",
+              "nomer": 119,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e6-k119-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e6-k120",
+              "nomer": 120,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e6-k120-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e6-k121",
+              "nomer": 121,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e6-k121-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e6-k122",
+              "nomer": 122,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e6-k122-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e7",
+          "etazh": 7,
+          "koridor": {
+            "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e7-koridor",
+            "tip": "koridor"
+          },
+          "kvartiry": [
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e7-k123",
+              "nomer": 123,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e7-k123-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e7-k124",
+              "nomer": 124,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e7-k124-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e7-k125",
+              "nomer": 125,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e7-k125-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e7-k126",
+              "nomer": 126,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e7-k126-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e7-k127",
+              "nomer": 127,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e7-k127-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e7-k128",
+              "nomer": 128,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e7-k128-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e7-k129",
+              "nomer": 129,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e7-k129-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e8",
+          "etazh": 8,
+          "koridor": {
+            "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e8-koridor",
+            "tip": "koridor"
+          },
+          "kvartiry": [
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e8-k130",
+              "nomer": 130,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e8-k130-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e8-k131",
+              "nomer": 131,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e8-k131-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e8-k132",
+              "nomer": 132,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e8-k132-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e8-k133",
+              "nomer": 133,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e8-k133-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e8-k134",
+              "nomer": 134,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e8-k134-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e8-k135",
+              "nomer": 135,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e8-k135-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e8-k136",
+              "nomer": 136,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e8-k136-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e9",
+          "etazh": 9,
+          "koridor": {
+            "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e9-koridor",
+            "tip": "koridor"
+          },
+          "kvartiry": [
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e9-k137",
+              "nomer": 137,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e9-k137-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e9-k138",
+              "nomer": 138,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e9-k138-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e9-k139",
+              "nomer": 139,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e9-k139-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e9-k140",
+              "nomer": 140,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e9-k140-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e9-k141",
+              "nomer": 141,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e9-k141-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e9-k142",
+              "nomer": 142,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e9-k142-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e9-k143",
+              "nomer": 143,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e9-k143-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e10",
+          "etazh": 10,
+          "koridor": {
+            "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e10-koridor",
+            "tip": "koridor"
+          },
+          "kvartiry": [
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e10-k144",
+              "nomer": 144,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e10-k144-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e10-k145",
+              "nomer": 145,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e10-k145-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e10-k146",
+              "nomer": 146,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e10-k146-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e10-k147",
+              "nomer": 147,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e10-k147-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e10-k148",
+              "nomer": 148,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e10-k148-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e10-k149",
+              "nomer": 149,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e10-k149-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e10-k150",
+              "nomer": 150,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s2-e10-k150-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kod": "000000-xx-bulvar-khudozhnikov-12-s3",
+      "nomer": 3,
+      "kvartir_na_etazh": 6,
+      "obshchie_zony": [
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s3-vhod",
+          "tip": "vkhodnaya_gruppa"
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s3-tambur",
+          "tip": "tambur"
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s3-lift",
+          "tip": "lift"
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s3-lestnica",
+          "tip": "lestnica"
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s3-okna-podezda",
+          "tip": "okna_v_podezde"
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s3-dveri-podezda",
+          "tip": "dveri_v_podezde"
+        }
+      ],
+      "etazhi": [
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e1",
+          "etazh": 1,
+          "koridor": {
+            "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e1-koridor",
+            "tip": "koridor"
+          },
+          "kvartiry": [
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e1-k151",
+              "nomer": 151,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e1-k151-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e1-k152",
+              "nomer": 152,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e1-k152-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e1-k153",
+              "nomer": 153,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e1-k153-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e1-k154",
+              "nomer": 154,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e1-k154-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e1-k155",
+              "nomer": 155,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e1-k155-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e1-k156",
+              "nomer": 156,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e1-k156-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e2",
+          "etazh": 2,
+          "koridor": {
+            "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e2-koridor",
+            "tip": "koridor"
+          },
+          "kvartiry": [
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e2-k157",
+              "nomer": 157,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e2-k157-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e2-k158",
+              "nomer": 158,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e2-k158-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e2-k159",
+              "nomer": 159,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e2-k159-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e2-k160",
+              "nomer": 160,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e2-k160-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e2-k161",
+              "nomer": 161,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e2-k161-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e2-k162",
+              "nomer": 162,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e2-k162-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e3",
+          "etazh": 3,
+          "koridor": {
+            "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e3-koridor",
+            "tip": "koridor"
+          },
+          "kvartiry": [
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e3-k163",
+              "nomer": 163,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e3-k163-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e3-k164",
+              "nomer": 164,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e3-k164-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e3-k165",
+              "nomer": 165,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e3-k165-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e3-k166",
+              "nomer": 166,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e3-k166-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e3-k167",
+              "nomer": 167,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e3-k167-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e3-k168",
+              "nomer": 168,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e3-k168-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e4",
+          "etazh": 4,
+          "koridor": {
+            "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e4-koridor",
+            "tip": "koridor"
+          },
+          "kvartiry": [
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e4-k169",
+              "nomer": 169,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e4-k169-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e4-k170",
+              "nomer": 170,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e4-k170-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e4-k171",
+              "nomer": 171,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e4-k171-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e4-k172",
+              "nomer": 172,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e4-k172-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e4-k173",
+              "nomer": 173,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e4-k173-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e4-k174",
+              "nomer": 174,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e4-k174-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e5",
+          "etazh": 5,
+          "koridor": {
+            "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e5-koridor",
+            "tip": "koridor"
+          },
+          "kvartiry": [
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e5-k175",
+              "nomer": 175,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e5-k175-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e5-k176",
+              "nomer": 176,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e5-k176-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e5-k177",
+              "nomer": 177,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e5-k177-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e5-k178",
+              "nomer": 178,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e5-k178-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e5-k179",
+              "nomer": 179,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e5-k179-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e5-k180",
+              "nomer": 180,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e5-k180-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e6",
+          "etazh": 6,
+          "koridor": {
+            "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e6-koridor",
+            "tip": "koridor"
+          },
+          "kvartiry": [
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e6-k181",
+              "nomer": 181,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e6-k181-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e6-k182",
+              "nomer": 182,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e6-k182-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e6-k183",
+              "nomer": 183,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e6-k183-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e6-k184",
+              "nomer": 184,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e6-k184-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e6-k185",
+              "nomer": 185,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e6-k185-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e6-k186",
+              "nomer": 186,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e6-k186-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e7",
+          "etazh": 7,
+          "koridor": {
+            "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e7-koridor",
+            "tip": "koridor"
+          },
+          "kvartiry": [
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e7-k187",
+              "nomer": 187,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e7-k187-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e7-k188",
+              "nomer": 188,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e7-k188-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e7-k189",
+              "nomer": 189,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e7-k189-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e7-k190",
+              "nomer": 190,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e7-k190-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e7-k191",
+              "nomer": 191,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e7-k191-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e7-k192",
+              "nomer": 192,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e7-k192-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e8",
+          "etazh": 8,
+          "koridor": {
+            "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e8-koridor",
+            "tip": "koridor"
+          },
+          "kvartiry": [
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e8-k193",
+              "nomer": 193,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e8-k193-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e8-k194",
+              "nomer": 194,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e8-k194-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e8-k195",
+              "nomer": 195,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e8-k195-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e8-k196",
+              "nomer": 196,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e8-k196-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e8-k197",
+              "nomer": 197,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e8-k197-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e8-k198",
+              "nomer": 198,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e8-k198-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e9",
+          "etazh": 9,
+          "koridor": {
+            "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e9-koridor",
+            "tip": "koridor"
+          },
+          "kvartiry": [
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e9-k199",
+              "nomer": 199,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e9-k199-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e9-k200",
+              "nomer": 200,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e9-k200-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e9-k201",
+              "nomer": 201,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e9-k201-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e9-k202",
+              "nomer": 202,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e9-k202-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e9-k203",
+              "nomer": 203,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e9-k203-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e9-k204",
+              "nomer": 204,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e9-k204-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e10",
+          "etazh": 10,
+          "koridor": {
+            "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e10-koridor",
+            "tip": "koridor"
+          },
+          "kvartiry": [
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e10-k205",
+              "nomer": 205,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e10-k205-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e10-k206",
+              "nomer": 206,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e10-k206-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e10-k207",
+              "nomer": 207,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e10-k207-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e10-k208",
+              "nomer": 208,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e10-k208-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e10-k209",
+              "nomer": 209,
+              "aktivna": true,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e10-k209-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            },
+            {
+              "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e10-k210",
+              "nomer": 210,
+              "aktivna": false,
+              "dostup_mest": 2,
+              "okna": [
+                {
+                  "kod": "000000-xx-bulvar-khudozhnikov-12-s3-e10-k210-o1",
+                  "storona": "fasad",
+                  "zaglushka": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "territoriya": [
+    {
+      "kod": "000000-xx-bulvar-khudozhnikov-12-dvor-parkovka",
+      "tip": "parkovka"
+    },
+    {
+      "kod": "000000-xx-bulvar-khudozhnikov-12-dvor-shlagbaum",
+      "tip": "vezdnaya_gruppa"
+    },
+    {
+      "kod": "000000-xx-bulvar-khudozhnikov-12-dvor-podval",
+      "tip": "podval"
+    },
+    {
+      "kod": "000000-xx-bulvar-khudozhnikov-12-dvor-ploshchadki",
+      "tip": "detskie_ploshchadki"
+    },
+    {
+      "kod": "000000-xx-bulvar-khudozhnikov-12-dvor-osveshchenie",
+      "tip": "ulichnoe_osveshchenie"
+    },
+    {
+      "kod": "000000-xx-bulvar-khudozhnikov-12-dvor-poliv",
+      "tip": "zona_avtopoliva"
+    },
+    {
+      "kod": "000000-xx-bulvar-khudozhnikov-12-dvor-besedka",
+      "tip": "besedka"
+    },
+    {
+      "kod": "000000-xx-bulvar-khudozhnikov-12-dvor-urny",
+      "tip": "urny"
+    },
+    {
+      "kod": "000000-xx-bulvar-khudozhnikov-12-dvor-lavochki",
+      "tip": "lavochki"
+    },
+    {
+      "kod": "000000-xx-bulvar-khudozhnikov-12-dvor-gazony",
+      "tip": "gazony"
+    }
+  ],
+  "pravila_vidimosti": {
+    "avariya": {
+      "cvet": "krasnyi",
+      "opisanie_vidno": "vsem",
+      "skryt_avtorom": false,
+      "kommentarii": "otkryty",
+      "uvedomlenie_sekcii": true,
+      "ponizit_mozhet": "tolko_moderator"
+    },
+    "zamechanie": {
+      "cvet": "zheltyi",
+      "opisanie_vidno": "po_zhelaniyu_avtora",
+      "rezhim_tolko_cvet": true,
+      "kommentarii": "otkryty"
+    },
+    "zamki_i_dveri": {
+      "cvet": "zheltyi_ili_krasnyi",
+      "opisanie_vidno": "tolko_moderatoru_i_zhilcam_kvartiry",
+      "primechanie": "Чтобы описание не показывало, что квартира пустует"
+    },
+    "predlozhenie": {
+      "cvet": null,
+      "opisanie_vidno": "vsem",
+      "spisok": "otdelnyi_spisok_doma_ili_territorii",
+      "kommentarii": "otkryty"
+    },
+    "zelenyi": {
+      "vychislyaetsya": "avtomaticheski",
+      "uslovie": "vse_zayavki_zakryty_i_podtverzhdeny"
+    }
+  },
+  "gruppy": [
+    {
+      "kod": "000000-xx-bulvar-khudozhnikov",
+      "nazvanie": "Бульвар Художников",
+      "doma": [
+        "12",
+        "уточнить_2",
+        "уточнить_3",
+        "уточнить_4",
+        "уточнить_5"
+      ],
+      "obshchie_obekty": [
+        {
+          "kod": "000000-xx-bulvar-khudozhnikov-gr-bomboubezhishche-1",
+          "tip": "bombouboezhishche",
+          "obsluzhivaet": [
+            "12",
+            "уточнить_2"
+          ]
+        }
+      ]
+    }
+  ]
+}
